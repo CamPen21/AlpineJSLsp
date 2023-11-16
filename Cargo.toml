@@ -5,6 +5,9 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[build-dependencies]
+cc="*"
+
 [dependencies]
 log = "0.4.20"
 lsp-server = "0.7.4"
@@ -12,4 +15,6 @@ serde = { version = "1.0.190", features = ["derive"] }
 crossbeam-channel = "0.5.8"
 serde_json = "1.0.107"
 lsp-types = "0.94.1"
+tree-sitter = "0.20.10"
+tree-sitter-html = "0.19.0"
 
